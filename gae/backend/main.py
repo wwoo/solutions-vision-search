@@ -26,6 +26,7 @@ from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 
 from google.appengine.api import images
+from google.appengine.api import runtime
 from google.appengine.api import search
 
 app = Flask(__name__)
