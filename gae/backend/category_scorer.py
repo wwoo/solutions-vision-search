@@ -96,7 +96,7 @@ def category_from_similar_vectors(labels):
     # as the original label.
 
     for label in labels:
-      words = label['description'].split(' ')
+      words = label['description'].lower().split(' ')
       for word in words:
         label_list.append(word)
         score_list.append(label['score'])
